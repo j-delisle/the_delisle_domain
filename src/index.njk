@@ -1,0 +1,54 @@
+---
+layout: 'base.njk'
+permalink: '/'
+pagination:
+data: collections.posts
+size: 3
+reverse: true
+---
+
+<div class="main-container">
+    <img src="/images/uploads/IMG_4562.jpg" alt="">
+    <div class="text-container">
+        <h1>Welcome to my Blog</h1>
+        <div class="word-banner">
+            <span class="odd">
+                <h4>Python</h4>
+            </span>
+            <span class="even">
+                <h4>JavaScript</h4>
+            </span>
+            <span class="odd">
+                <h4>Django</h4>
+            </span>
+            <span class="even">
+                <h4>Tech</h4>
+            </span>
+            <span class="odd">
+                <h4>Freelance</h4>
+            </span>
+            <span class="even">
+                <h4>Business</h4>
+            </span>
+            <span class="odd">
+                <h4>Software Development</h4>
+            </span>
+        </div>
+        <p>
+            Here I share all things tech, software development, and business - the things that I am passionate about and
+            love to share with people as well as what I’m learning!
+        </p>
+    </div>
+</div>
+
+<div class="recent-post">
+    <h3>Check out my latest posts</h3>
+    {% for post in collections.posts %}
+    <article>
+        <h4><a href="{{ post.url }}">{{ post.data.title }}</a></h4>
+        <h6>{{ post.data.date.toDateString() }}</h6>
+        <h5>{{ post.data.description }}</h5>
+    </article>
+    <img src="{{ post.data.featuredImage }}" alt="">
+    {% endfor %}
+</div>

@@ -1,0 +1,131 @@
+:root {
+  /* colors */
+  --global-bg-color: #17252a;
+  --global-heading-text-color: #3aafa9;
+  --global-primary-text-color: #feffff;
+  --global-secondary-text-color: #def2f1;
+
+  /* Font size */
+  --global-h1-text-size: 1.5rem;
+  --global--h2-text-size: 1.1667rem;
+  --global-base-text-size: 24px;
+  --global-h4-text-size: 0.75rem;
+  --global-h5-text-size: 0.5833rem;
+
+  /* fonts */
+  --global-primary-font: Staatliches, sans-serif, monospace;
+  --global-secondary-font: Righteous, sans-serif, monospace;
+
+  background-color: var(--global-bg-color);
+  font-size: var(--global-base-text-size);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: var(--global-heading-text-color);
+  font-size: var(--global-h1-text-size);
+}
+
+h4 {
+  color: teal;
+  font-size: var(--global-h4-text-size);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  height: 115px;
+  max-width: 80%;
+  margin: auto;
+  /* background-color: white; */
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding-right: 1rem;
+}
+
+nav a {
+  font-size: var(--global-base-text-size);
+  color: var(--global-primary-text-color);
+  padding: 20px;
+  text-decoration: none;
+  font-family: var(--global-primary-font);
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--global-heading-text-color);
+}
+
+.logo {
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+.logo a {
+  color: var(--global-heading-text-color);
+  text-decoration: none;
+  font-family: var(--global-primary-font);
+  text-transform: uppercase;
+}
+
+/* HERO SECTION */
+
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.main-container img {
+  display: block;
+  margin: 0 2rem;
+  width: 30%;
+  border-radius: 50%;
+}
+
+.text-container {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  font-family: var(--global-secondary-font);
+  text-align: center;
+  align-items: center;
+}
+
+.text-container p {
+  color: var(--global-primary-text-color);
+}
+.word-banner {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.word-banner h4 {
+  margin: 1.5rem;
+}
+
+.word-banner p {
+}
+
+.word-banner .odd h4 {
+}

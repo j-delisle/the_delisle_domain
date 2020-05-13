@@ -1,0 +1,18 @@
+{
+  "name": "the_delisle_domain",
+  "version": "1.0.0",
+  "description": "My Personal blog website",
+  "main": ".eleventy.js",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "netlify-cms": "^2.10.48"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "npx eleventy",
+    "start": "npx eleventy --serve --watch"
+  },
+  "keywords": [],
+  "author": "Jay Delisle",
+  "license": "ISC"
+}
