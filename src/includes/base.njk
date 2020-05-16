@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Righteous|Staatliches&display=swap"
-      rel="stylesheet"
-    />
-    <title>Blog</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="logo">
-        <h1>
-          <a href="/"
-            >&lt; The Delisle <br />
-            Domain /&gt;</a
-          >
-        </h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Staatliches&display=swap" rel="stylesheet" />
+  <title>Blog</title>
+</head>
 
-    {% block postContent %} {% block content %}{{ content | safe }}{% endblock
+<body>
+  <header>
+    <div class="logo">
+      <h1>
+        <a href="/">&lt; The Delisle <br />
+          Domain /&gt;</a>
+      </h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a class="is_{{ 'active' if '/' in page.url }}" href="/">Home</a></li>
+        <li><a class="is_{{ 'active' if '/blog' in page.url }}" href="/blog">Blog</a></li>
+        <li><a class="is_{{ 'active' if '/about' in page.url }}" href="/about">About</a></li>
+        <li><a class="is_{{ 'active' if '/contact' in page.url }}" href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  {% block postContent %} {% block content %}{{ content | safe }}{% endblock
     %} {% endblock %}
 
-    <footer></footer>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
-  </body>
+  <footer></footer>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+
 </html>

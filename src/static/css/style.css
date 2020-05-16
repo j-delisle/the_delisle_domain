@@ -1,9 +1,9 @@
 :root {
   /* colors */
-  --global-bg-color: #17252a;
+  --global-bg-color: #1f2226;
   --global-heading-text-color: #3aafa9;
   --global-primary-text-color: #feffff;
-  --global-secondary-text-color: #def2f1;
+  --global-secondary-text-color: #bacfc1;
 
   /* Font size */
   --global-h1-text-size: 1.5rem;
@@ -45,7 +45,7 @@ header {
   height: 115px;
   max-width: 80%;
   margin: auto;
-  /* background-color: white; */
+  border-bottom: solid white 2px;
 }
 
 nav {
@@ -56,6 +56,7 @@ nav ul {
   display: flex;
   list-style: none;
   padding-right: 1rem;
+  padding-top: 1rem;
 }
 
 nav a {
@@ -69,6 +70,10 @@ nav a {
 
 nav a:hover {
   color: var(--global-heading-text-color);
+}
+
+.is_active {
+  color: var(--global-secondary-text-color);
 }
 
 .logo {
@@ -87,15 +92,23 @@ nav a:hover {
 
 .main-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   margin-top: 4rem;
 }
 
-.main-container img {
-  display: block;
+.portrait-container {
+  position: relative;
+  width: 400px;
+  height: 550px;
+  overflow: hidden;
   margin: 0 2rem;
-  width: 30%;
+}
+
+.portrait-container img {
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -103,11 +116,16 @@ nav a:hover {
   max-width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 3rem;
   font-family: var(--global-secondary-font);
   text-align: center;
   align-items: center;
+  max-width: 750px;
+}
+
+.text-container h1 {
+  font-family: var(--global-primary-font);
 }
 
 .text-container p {
@@ -121,11 +139,59 @@ nav a:hover {
 }
 
 .word-banner h4 {
-  margin: 1.5rem;
+  margin: 0.75rem;
+  color: var(--global-secondary-text-color);
 }
 
 .word-banner p {
 }
 
 .word-banner .odd h4 {
+}
+
+/* Recent Blog Post Section */
+.recent-post {
+  max-width: 80%;
+  margin: 4rem auto;
+  max-width: 900px;
+  border: solid var(--global-secondary-text-color) 2px;
+  padding: 1rem;
+}
+
+.recent-post:hover {
+  background-color: rgba(186, 207, 193, 0.2);
+  border: solid rgba(186, 207, 193, 0.2) 2px;
+}
+
+.recent-post h3 {
+  font-family: var(--global-primary-font);
+  color: var(--global-heading-text-color);
+  text-align: center;
+}
+
+.post-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.post-container article {
+  display: inline-block;
+  font-family: var(--global-secondary-font);
+  color: var(--global-primary-text-color);
+  text-align: center;
+}
+
+.post-container article a {
+  text-decoration: none;
+  color: var(--global-primary-text-color);
+}
+
+.post-container article h6 {
+  color: var(--global-secondary-text-color);
+}
+
+.post-container img {
+  width: auto;
+  height: 250px;
 }

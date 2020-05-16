@@ -2,13 +2,16 @@
 layout: 'base.njk'
 permalink: '/'
 pagination:
-data: collections.posts
-size: 3
-reverse: true
+  data: collections.posts
+  size: 3
+  reverse: true
 ---
 
 <div class="main-container">
-    <img src="/images/uploads/IMG_4562.jpg" alt="">
+    <div class="portrait-container">
+       <img src="/images/uploads/bio-grayscale.jpg" alt=""> 
+    </div>
+
     <div class="text-container">
         <h1>Welcome to my Blog</h1>
         <div class="word-banner">
@@ -44,11 +47,13 @@ reverse: true
 <div class="recent-post">
     <h3>Check out my latest posts</h3>
     {% for post in collections.posts %}
-    <article>
-        <h4><a href="{{ post.url }}">{{ post.data.title }}</a></h4>
-        <h6>{{ post.data.date.toDateString() }}</h6>
-        <h5>{{ post.data.description }}</h5>
-    </article>
-    <img src="{{ post.data.featuredImage }}" alt="">
+    <div class="post-container">
+        <article>
+            <h4><a href="{{ post.url }}">{{ post.data.title }}</a></h4>
+            <h6>{{ post.data.date.toDateString() }}</h6>
+            <h5>{{ post.data.description }}</h5>
+        </article>
+        <img src="{{ post.data.featuredImage }}" alt="">
+    </div>
     {% endfor %}
 </div>
