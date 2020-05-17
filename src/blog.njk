@@ -1,16 +1,20 @@
 {% extends "base.njk" %}
 {% block postContent %}
-  <ul>
-  {% for post in collections.posts %}
-    <li>
+<div class="posts-container">
+  <ol>
+    {% for post in collections.posts %}
+    <li class="post-stub">
       <strong>
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        <a href="{{ post.url }}">
+          <h1 class="stub-title">{{ post.data.title }}</h1>
+          <h3 class="stub-description">{{ post.data.description }}</h3>
+        </a>
       </strong>
-      -
-      <time datetime="{{ post.date.toString() }}">{{ post.date.toDateString() }}</time>
-      -
-      <span>{{ post.data.description }}</span>
+      <div class="info-right">
+        <time datetime="{{ post.date.toString() }}">{{ post.date.toDateString() }}</time>
+      </div>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ol>
+</div>
 {% endblock %}
