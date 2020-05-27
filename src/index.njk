@@ -1,10 +1,6 @@
 ---
 layout: 'base.njk'
 permalink: '/'
-pagination:
-  data: collections.posts
-  size: 3
-  reverse: true
 ---
 
 <div class="main-container">
@@ -38,15 +34,14 @@ pagination:
             </span>
         </div>
         <p>
-            Here I share all things tech, software development, and business - the things that I am passionate about and
-            love to share with people as well as what I’m learning!
+            Here I share all things tech, software development, and business - things that I am passionate about. Join me as I continue to share what I'm learning!
         </p>
     </div>
 </div>
 
 <div class="recent-post">
     <h3>Check out my latest posts</h3>
-    {% for post in collections.posts %}
+    {% for post in collections.blogs %}
     <div class="post-container">
         <article>
             <a href="{{ post.url }}">

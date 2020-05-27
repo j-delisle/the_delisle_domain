@@ -23,6 +23,9 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 99vh;
 }
 
 h1 {
@@ -44,7 +47,7 @@ a {
 header {
   display: flex;
   height: 115px;
-  max-width: 80%;
+  width: 80%;
   margin: auto;
   border-bottom: solid white 2px;
 }
@@ -89,6 +92,24 @@ nav a:hover {
   text-transform: uppercase;
 }
 
+/* Footer */
+footer {
+  padding-bottom: 0.5rem;
+  font-size: 0.5rem;
+  font-family: var(--global-secondary-font);
+  color: rgb(100, 100, 100);
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
 /* HERO SECTION */
 
 .main-container {
@@ -131,6 +152,7 @@ nav a:hover {
 
 .text-container p {
   color: var(--global-primary-text-color);
+  max-width: 75%;
 }
 
 .word-banner {
@@ -145,12 +167,6 @@ nav a:hover {
   color: var(--global-secondary-text-color);
 }
 
-.word-banner p {
-}
-
-.word-banner .odd h4 {
-}
-
 /* Recent Blog Post Section */
 .recent-post {
   max-width: 80%;
@@ -163,6 +179,7 @@ nav a:hover {
   font-family: var(--global-primary-font);
   color: var(--global-heading-text-color);
   text-align: center;
+  font-size: var(--global--h2-text-size);
 }
 
 .post-container {
@@ -183,6 +200,7 @@ nav a:hover {
   font-family: var(--global-secondary-font);
   color: var(--global-primary-text-color);
   text-align: center;
+  padding: 1rem;
 }
 
 .post-container article a {
@@ -247,4 +265,155 @@ nav a:hover {
 
 .stub-description {
   color: var(--global-primary-text-color);
+}
+
+/* About Page */
+
+.bio {
+  display: flex;
+  margin: 2rem auto;
+  max-width: 60%;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio img {
+  height: 75vh;
+  width: auto;
+  padding-left: 2rem;
+  border-radius: 4rem;
+}
+
+.bio h2 {
+  color: var(--global-heading-text-color);
+  font-family: var(--global-primary-font);
+}
+
+.bio p {
+  color: var(--global-primary-text-color);
+  font-family: var(--global-secondary-font);
+  font-size: var(--global-h4-text-size);
+}
+
+.name {
+  text-transform: uppercase;
+  color: var(--global-heading-text-color);
+  font-family: var(--global-primary-font);
+  font-size: var(--global--h2-text-size);
+}
+
+.job {
+  text-transform: uppercase;
+  color: var(--global-secondary-text-color);
+  font-family: var(--global-primary-font);
+  font-size: var(--global--h2-text-size);
+}
+
+/* Contact Page */
+.questions {
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}
+.question-text {
+  color: var(--global-primary-text-color);
+}
+
+form {
+  width: 30%;
+  margin: auto;
+  padding: 1rem;
+}
+
+form label {
+  color: var(--global-heading-text-color);
+  font-family: var(--global-primary-font);
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 0.75rem;
+  background-color: rgb(100, 100, 100);
+  color: var(--global-primary-text-color);
+  border: solid rgb(100, 100, 100) 2px;
+}
+
+form input[type="text"]:focus {
+  outline-color: var(--global-heading-text-color);
+}
+
+form textarea {
+  resize: none;
+  width: 100%;
+  height: 5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 0.75rem;
+  background-color: rgb(100, 100, 100);
+  color: var(--global-primary-text-color);
+  border: solid rgb(100, 100, 100) 2px;
+}
+
+form textarea:focus {
+  outline-color: var(--global-heading-text-color);
+}
+
+button {
+  display: block;
+  padding: 0.5rem;
+  margin: 0 auto;
+  height: 60px;
+  width: 120px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  border: solid var(--global-heading-text-color) 3px;
+  background-color: var(--global-bg-color);
+  color: var(--global-heading-text-color);
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+button:hover {
+  color: var(--global-bg-color);
+  background-color: var(--global-heading-text-color);
+  transition: 0.4s;
+}
+
+/* Single Post Page */
+.ind-post-container {
+  width: 60%;
+  margin: auto;
+}
+
+.ind-post-container {
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.ind-post-header img {
+  height: 30vh;
+  width: auto;
+}
+
+.ind-post-title {
+  color: var(--global-heading-text-color);
+  font-family: var(--global-primary-font);
+}
+
+.ind-post-date {
+  color: var(--global-secondary-text-color);
+  font-family: var(--global-primary-font);
+}
+
+.ind-content {
+  color: var(--global-primary-text-color);
+  font-family: var(--global-secondary-font);
+  font-size: var(--global-h4-text-size);
 }

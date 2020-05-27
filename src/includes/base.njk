@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/static/css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Righteous|Staatliches&display=swap" rel="stylesheet" />
-  <title>Blog</title>
+  <title>The Delisle Domain </title>
 </head>
 
 <body>
@@ -30,7 +30,15 @@
   {% block postContent %} {% block content %}{{ content | safe }}{% endblock
     %} {% endblock %}
 
-  <footer></footer>
+  <div style="flex-grow:1"></div>
+  <footer>
+    <p>&copy;The Delisle Domain</p>
+    <p>Made with
+      <a href="https://www.11ty.dev/">11ty</a>,
+      <a href="https://www.netlify.com/">Netlify</a>,
+      and <span class='coffee'>☕️</span>
+    </p>
+  </footer>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
     if (window.netlifyIdentity) {
