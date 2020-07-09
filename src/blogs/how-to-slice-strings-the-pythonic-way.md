@@ -23,11 +23,14 @@ As mentioned above, you can imagine a string as a list in order to find its posi
 
 All we need to do to slice the string is to add \[] to the end of the string variable. The syntax and arguments of string slicing are as follows: 
 
+
 ```python
 string[start : end : step]
 ```
 
+
 Going back to our `str` - let’s say that we only wanted it to say ‘I love cars’. We would perform the following code:
+
 
 ```python
 new_string = str[:11]
@@ -35,8 +38,10 @@ new_string = str[:11]
 new_string = 'I love cars'
 ```
 
+
 Let’s say we wanted just the last word of the original string - we can accomplish this two ways:
 1 - The first way is with positive slicing as we did above
+
 
 ```python
 new_str = str[16:]
@@ -44,9 +49,11 @@ new_str = str[16:]
 new_str = 'motorcycles' 
 ```
 
+
 Starting at the 16th character and stopping at the last we get ‘motorcycles’
 
 2 - We can also do this in a more pythonic efficient way using negative slicing - we can start at the end of the string seeing we want the last word. This would look like the below:
+
 
 ```python
 new_str = str[-11 : -1]
@@ -54,7 +61,9 @@ new_str = str[-11 : -1]
 new_str = 'motorcycle'
 ```
 
+
 Or
+
 
 ```python
 new_str = str[-11:]
@@ -62,14 +71,17 @@ new_str = str[-11:]
 new_str = 'motorcycles'
 ```
 
+
 The first example we start at -11 index and go until the -1 index - which cuts the s off. The example above completely grabs the last word as it starts at -11 index and goes until the end of the original string.
 
 Lastly, let’s go over the step functionality. If we were to get every other character it would look like so:
+
 
 ```python
 new_str = str[::2}
 #Output:
 new_str = 'Ilv asadmtryls'
 ```
+
 
 The possibilities for using slicing in python are endless and it tends to be a quick, efficient, and readable way to slice strings into substrings - keeping the original string unmodified.
