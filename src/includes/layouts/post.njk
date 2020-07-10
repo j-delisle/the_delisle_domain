@@ -3,7 +3,9 @@
 {% block content %}
 <article class="ind-post-container">
     <div class="ind-post-header">
-        <img src="{{ featuredImage | url }}" alt="{{ featuredImage }}"></img>
+        <div class="img-hero">
+            <img src="{{ featuredImage | url }}" alt="{{ featuredImage }}"></img>
+        </div>
         <h2 class="ind-post-title">{{ title }}</h2>
         <h3 class="ind-post-date">{{ page.date.toDateString() }}</h3>
     </div>

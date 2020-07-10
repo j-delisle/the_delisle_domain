@@ -272,20 +272,22 @@ footer p {
 .bio {
   display: flex;
   margin: 2rem auto;
-  max-width: 60%;
+  max-width: 75%;
+  justify-content: space-evenly;
 }
 
 .bio-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 2rem;
 }
 
 .bio img {
-  height: 75vh;
-  width: auto;
-  padding-left: 2rem;
+  height: auto;
+  width: 100%;
   border-radius: 4rem;
+  margin-top: 3rem;
 }
 
 .bio h2 {
@@ -315,12 +317,14 @@ footer p {
 
 /* Contact Page */
 .questions {
-  width: 20%;
+  width: 35%;
   margin: auto;
   text-align: center;
 }
 .question-text {
   color: var(--global-primary-text-color);
+  font-family: var(--global-secondary-font);
+  font-size: var(--global-h4-text-size);
 }
 
 form {
@@ -397,9 +401,15 @@ button:hover {
   width: 80%;
 }
 
+.img-hero {
+  max-height: 350px;
+  overflow: hidden;
+}
+
 .ind-post-header img {
-  height: 30vh;
-  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .ind-post-title {
@@ -416,4 +426,12 @@ button:hover {
   color: var(--global-primary-text-color);
   font-family: var(--global-secondary-font);
   font-size: var(--global-h4-text-size);
+}
+
+.ind-content h2 {
+  color: var(--global-heading-text-color);
+}
+
+.ind-content pre {
+  color: var(--global-heading-text-color);
 }

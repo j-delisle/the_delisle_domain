@@ -3,7 +3,7 @@
 {% block postContent %}
 <div class="posts-container">
   <ol>
-    {% for post in collections.blogs %}
+    {% for post in collections.blogs | reverse %}
     <li class="post-stub">
       <strong>
         <a href="{{ post.url }}">
