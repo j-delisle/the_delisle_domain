@@ -41,7 +41,7 @@ permalink: '/'
 
 <div class="recent-post">
     <h3>Check out my latest posts</h3>
-    {% for post in collections.blogs %}
+    {% for post in collections.blogs.slice(0,3) | reverse %}
     <div class="post-container">
         <article>
             <a href="{{ post.url }}">
