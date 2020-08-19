@@ -5,12 +5,14 @@
   "main": ".eleventy.js",
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "netlify-cms": "^2.10.48"
+    "netlify-cms": "^2.10.48",
+    "tailwindcss": "^1.6.2"
   },
   "devDependencies": {},
   "scripts": {
     "build": "npx eleventy",
-    "start": "npx eleventy --serve --watch"
+    "dev": "npx eleventy --serve --watch",
+    "build-css": "tailwindcss build src/static/css/style.css -o _site/static/css/style.css"
   },
   "keywords": [],
   "author": "Jay Delisle",
