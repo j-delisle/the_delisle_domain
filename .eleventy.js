@@ -1,7 +1,7 @@
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/images')
     eleventyConfig.addPassthroughCopy('src/admin')
-    eleventyConfig.addPassthroughCopy('src/static/css')
+    eleventyConfig.addPassthroughCopy('src/static')
 
     return {
         addPassthroughCopy: true,
