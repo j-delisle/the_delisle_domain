@@ -10,25 +10,24 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo">
+  <header class="container mx-auto h-20 m-8 flex justify-between border-b-2 border-prime_text">
+    <div class="logo font-display ml-2">
       <h1>
-        <a href="/">&lt; The Delisle <br />
+        <a href="/" class="text-2xl">&lt; The Delisle <br />
           Domain /&gt;</a>
       </h1>
     </div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a class="is_{{ 'active' if '/blog' in page.url }}" href="/blog">Blog</a></li>
-        <li><a class="is_{{ 'active' if '/about' in page.url }}" href="/about">About</a></li>
-        <li><a class="is_{{ 'active' if '/contact' in page.url }}" href="/contact">Contact</a></li>
+    <nav class="flex items-center">
+      <ul class="flex justify-end">
+        <li><a class="nav-item hover:text-primary active:text-secondary_text"href="/">Home</a></li>
+        <li><a class="is_{{ 'active' if '/blog' in page.url }} nav-item hover:text-primary active:text-secondary_text" href="/blog">Blog</a></li>
+        <li><a class="is_{{ 'active' if '/about' in page.url }} nav-item hover:text-primary active:text-secondary_text" href="/about">About</a></li>
+        <li><a class="is_{{ 'active' if '/contact' in page.url }} nav-item hover:text-primary active:text-secondary_text" href="/contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  {% block postContent %} {% block content %}{{ content | safe }}{% endblock
-    %} {% endblock %}
+  {% block postContent %} {% block content %}{{ content | safe }}{% endblock%} {% endblock %}
 
   <div style="flex-grow:1"></div>
   <footer>
@@ -36,6 +35,7 @@
     <p>Made with
       <a href="https://www.11ty.dev/">11ty</a>,
       <a href="https://www.netlify.com/">Netlify</a>,
+      <a href="https://tailwindcss.com/">Tailwindcss</a>,
       and <span class='coffee'>☕️</span>
     </p>
   </footer>
