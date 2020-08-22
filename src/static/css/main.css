@@ -1,16 +1,16 @@
 @tailwind base;
 
 :root {
-    @apply bg-secondary text-prime_text;
+    @apply bg-secondary text-prime_text font-body;
     font-size: 24px;
 }
 
 h1 {
-    @apply text-2xl;
+    @apply text-2xl text-primary;
 }
 
 h2 {
-    @apply text-xl;
+    @apply text-xl text-primary;
 }
 
 h3 {
@@ -26,7 +26,7 @@ h5 {
 }
 
 a {
-    text-decoration: none;
+    @apply no-underline;
 }
 
 @tailwind components;
@@ -38,4 +38,13 @@ a {
 
 .word-banner {
     @apply font-body text-sm p-1 text-secondary_text
+}
+
+.form-input {
+    @apply bg-light pl-3 m-4 w-1/2;
+    outline-color: #3aafa9;
+}
+
+pre {
+    @apply text-yellow-400
 }

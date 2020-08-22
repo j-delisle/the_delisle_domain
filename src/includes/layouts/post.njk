@@ -1,15 +1,15 @@
 {% extends "base.njk" %}
 
 {% block content %}
-<article class="ind-post-container">
-    <div class="ind-post-header">
-        <div class="img-hero">
+<article class="container mx-auto">
+    <div class="w-full pb-4 mb-2 mx-auto border-b-2 border-secondary_text">
+        <div class="w-2/5 mx-auto pb-4">
             <img src="{{ featuredImage | url }}" alt="{{ featuredImage }}"></img>
         </div>
-        <h2 class="ind-post-title">{{ title }}</h2>
-        <h3 class="ind-post-date">{{ page.date.toDateString() }}</h3>
+        <h2 class="font-display text-primary text-2xl">{{ title }}</h2>
+        <h3 class="text-xs text-secondary_text">{{ page.date.toDateString() }}</h3>
     </div>
-    <div class="ind-content">
+    <div class="container-lg text-sm mt-3">
         {{ content | safe }}
     </div>
 </article>
