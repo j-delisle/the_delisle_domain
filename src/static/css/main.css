@@ -1,8 +1,41 @@
-@import 'style.css';
 @tailwind base;
+
+:root {
+    @apply bg-secondary text-prime_text;
+    font-size: 24px;
+}
+
+h1 {
+    @apply text-2xl;
+}
+
+h2 {
+    @apply text-xl;
+}
+
+h3 {
+    @apply text-lg;
+}
+
+h4 {
+    @apply text-sm;
+}
+
+h5 {
+    @apply text-xs;
+}
+
+a {
+    text-decoration: none;
+}
+
 @tailwind components;
 @tailwind utilities;
 
 .nav-item {
     @apply font-display text-prime_text text-lg px-4
+}
+
+.word-banner {
+    @apply font-body text-sm p-1 text-secondary_text
 }
