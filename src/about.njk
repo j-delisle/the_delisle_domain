@@ -1,15 +1,16 @@
 {% extends "base.njk" %}
 {% block postContent %}
-<section class="bio">
-
-    <div class="bio-text">
-        <h2 class="bio-heading">Howdy, and welcome to my blog! </h2>
-        <p>
-            Let me formally introduce myself - My name is <span class="name">Jay Delisle</span>. I currently work as a
-            <span class="job">software
+<section class="container mx-auto flex justify-evenly">
+    <div class="container mx-auto p-4">
+        <h2 class="text-primary font-display pb-2">Howdy, and welcome to my blog! </h2>
+        <p class="text-xs">
+            Let me formally introduce myself - My name is <span class="text-primary">Jay Delisle</span>. I currently work as a
+            <span class="text-primary">software
                 automation engineer </span>.
+            <br>
+            <br>
         </p>
-        <p>
+        <p class="text-xs">
             I mainly work with Python while at my day job, but I am learning web development and Javascript in the after
             hours! I use this blog as a place where I can help others in the life-learning
             journey of being a software engineer. I've been programming since highschool - however, I graduated college
@@ -30,8 +31,8 @@
             forward for you to get to know me and learn with me as I dive into software, tech, and business.
         </p>
     </div>
-    <div class="pic-container">
-        <img src="/images/uploads/IMG_2034.jpg" title="Glacier Bay, Alaska" alt="">
+    <div class="h-auto w-2/5 p-4 float-right">
+        <img src="/images/uploads/IMG_2034.jpg" title="Glacier Bay, Alaska" alt="" class="rounded-full">
     </div>
 </section>
 

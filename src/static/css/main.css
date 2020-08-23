@@ -1,0 +1,50 @@
+@tailwind base;
+
+:root {
+    @apply bg-secondary text-prime_text font-body;
+    font-size: 24px;
+}
+
+h1 {
+    @apply text-2xl text-primary;
+}
+
+h2 {
+    @apply text-xl text-primary;
+}
+
+h3 {
+    @apply text-lg;
+}
+
+h4 {
+    @apply text-sm;
+}
+
+h5 {
+    @apply text-xs;
+}
+
+a {
+    @apply no-underline;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.nav-item {
+    @apply font-display text-prime_text text-lg px-4
+}
+
+.word-banner {
+    @apply font-body text-sm p-1 text-secondary_text
+}
+
+.form-input {
+    @apply bg-light pl-3 m-4 w-1/2;
+    outline-color: #3aafa9;
+}
+
+pre {
+    @apply text-yellow-400
+}
