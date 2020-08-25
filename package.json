@@ -34,7 +34,7 @@
     "testProd:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet",
     "testProd:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
     "testbuild": "NODE_ENV=production npm-run-all clean --parallel testProd:*",
-    "prod:postcss": "postcss src/static/css/main.css -d _site/static/css --config ./postcss.config.js -w",
+    "prod:postcss": "postcss src/static/css/main.css -d _site/static/css --config ./postcss.config.js",
     "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site",
     "build": "NODE_ENV=production npm-run-all clean --parallel prod:*"
   },
