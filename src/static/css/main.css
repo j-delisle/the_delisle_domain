@@ -48,3 +48,7 @@ a {
 pre {
     @apply text-yellow-400
 }
+
+.is_active {
+    @apply text-secondary_text;
+}
