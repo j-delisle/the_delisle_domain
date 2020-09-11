@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         display: ["Staatliches"],
-        body: ["Righteous"],
+        body: ["Lato"],
       },
       colors: {
         primary: "#3aafa9",
@@ -14,6 +14,9 @@ module.exports = {
         prime_text: "#feffff",
         secondary_text: "#bacfc1",
         light: "#646464",
+      },
+      fontSize: {
+        'tiny': '0.6rem'
       },
     },
   },
