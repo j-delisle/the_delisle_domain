@@ -25,7 +25,7 @@ permalink: '/'
 <div class="container mt-12 mx-auto">
     <h3 class="font-display text-primary mx-auto text-2xl text-center m-10">Check out my latest posts</h3>
     {% for post in collections.blogs.slice(0,3) | reverse %}
-    <div class="container-md p-4 flex justify-between border-2 border-light hover:bg-light">
+    <div class="container-md mx-auto max-w-screen-lg p-4 flex justify-between border-2 border-light hover:bg-light">
         <article class="font-body flex">
             <a href="{{ post.url }}" class="flex flex-col justify-evenly">
                 <h4 class="font-display text-xl text-primary">{{ post.data.title }}</h4>
