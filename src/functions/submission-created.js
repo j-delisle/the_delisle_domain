@@ -16,8 +16,15 @@ exports.handler = async (event) => {
                 notes: payload.name,
             }),
         })
+        .then(res => {
+            console.log(res.ok);
+            console.log(res.status);
+            console.log(res.statusText)
+            console.log(res.headers.raw());
+        })
         .then((response) => response.json())
         .then((data) => {
+            console.log(`response: ${response}`)
             console.log(`Submitted to Buttondown:\n ${data}`);
         })
         .catch((error) => ({
