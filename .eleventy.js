@@ -3,6 +3,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/static");
 
+  eleventyConfig.addCollection("recentPosts", function (collection) {
+    return collection.getFilteredByGlob("src/blogs/*.md").reverse();
+  });
+
   return {
     addPassthroughCopy: true,
     templateFormats: ["njk", "html", "md"],

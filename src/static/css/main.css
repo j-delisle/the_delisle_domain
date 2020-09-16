@@ -48,6 +48,82 @@ a {
 .is_active {
   @apply text-secondary_text;
 }
-code {
-  @apply text-orange-600;
+
+/* Markdown user-generated Selectors */
+/* purgecss start ignore */
+.markdown {
+  @apply text-prime_text leading-normal break-words;
 }
+
+.markdown strong {
+  @apply font-semibold;
+}
+
+.markdown a {
+  @apply text-primary font-semibold;
+}
+
+.markdown strong a {
+  @apply font-bold;
+}
+
+.markdown h1 {
+  @apply text-primary font-display leading-tight border-b font-semibold mb-4 mt-6 pb-2;
+}
+
+.markdown h2 {
+  @apply text-primary font-display leading-tight border-b font-semibold mb-4 mt-6 pb-2;
+}
+
+.markdown h3 {
+  @apply text-primary font-display leading-snug font-semibold mb-4 mt-6;
+}
+
+.markdown h4 {
+  @apply text-primary font-display leading-none font-semibold mb-4 mt-6;
+}
+
+.markdown h5 {
+  @apply font-display leading-tight font-semibold mb-4 mt-6;
+}
+
+.markdown h6 {
+  @apply font-display leading-tight font-semibold text-gray-600 mb-4 mt-6;
+}
+
+.markdown blockquote {
+  @apply text-base border-l-4 border-gray-500 pl-4 pr-4 text-gray-600;
+}
+
+.markdown code {
+  @apply bg-gray-700 text-secondary_text px-1;
+}
+
+.markdown pre {
+  @apply bg-gray-700 rounded p-4 my-4;
+}
+
+.markdown pre code {
+  @apply block bg-gray-700 p-0 overflow-scroll rounded-none;
+}
+
+.markdown ul {
+  @apply pl-8 list-disc;
+}
+
+.markdown ol {
+  @apply pl-8 list-decimal;
+}
+
+.markdown table {
+  @apply border-gray-600;
+}
+
+.markdown th {
+  @apply border py-1 px-3;
+}
+
+.markdown td {
+  @apply border py-1 px-3;
+}
+/* purgecss end ignore */

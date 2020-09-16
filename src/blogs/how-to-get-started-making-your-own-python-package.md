@@ -6,6 +6,7 @@ description: A quick intro of the minimum requirements needed in order to create
 date: 2020-09-14T04:00:00.000Z
 featuredImage: /images/uploads/python_original_wordmark_logo_icon_146382.png
 ---
+
 Over the past few days - I've been looking into getting more involved in opensource - so I've been on Github just exploring different repositories and technologies. This got me thinking - how cool would it be to have a tool or program that could help other developers up on GitHub? Most of my stuff now is just websites - not full applications. But how do I start? How can I make my software available to others to use? After googling, I quickly realized I needed to make my own package! So here we will learn the basics of how to make your own Python package!
 
 # What is a Package
@@ -41,13 +42,13 @@ The root directory is the name of our package - my_package. Then inside this, we
 
 After you have the needed files, we need to create the needed tools/files for a release, otherwise known as generating the [distribution packages](https://packaging.python.org/glossary/#term-Distribution-Package) for the package. These tools can quickly and easily be installed with `pip` on the command line as follows:
 
-```
+```shell
 python3 -m pip install --user --upgrade setuptools wheel
 ```
 
 after installing these run the below command from the package root directory:
 
-```
+```shell
 python3 setup.py sdist bdist_wheel
 ```
 
@@ -61,13 +62,13 @@ You will need to register for an account (if you don't already have one) on [PyP
 
 We can use [twine](https://packaging.python.org/key_projects/#twine) to now upload the package. First, you will need to install it if you don't already have it
 
-```
+```shell
 python3 -m pip install --user --upgrade twine
 ```
 
 Then run the below command to upload your package!
 
-```
+```shell
 python3 -m twine upload dist/*
 ```
 
