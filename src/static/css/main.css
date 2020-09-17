@@ -95,6 +95,10 @@ a {
   @apply text-base border-l-4 border-gray-500 pl-4 pr-4 text-gray-600;
 }
 
+.markdown img {
+  @apply my-8;
+}
+
 .markdown code {
   @apply bg-gray-700 text-secondary_text px-1;
 }
@@ -126,4 +130,5 @@ a {
 .markdown td {
   @apply border py-1 px-3;
 }
+
 /* purgecss end ignore */
