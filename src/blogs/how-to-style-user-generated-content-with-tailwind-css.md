@@ -2,10 +2,11 @@
 layout: layouts/post.njk
 title: How to Style User-Generated Content with Tailwind CSS
 description: A quick solution to style the markdown that is converted into
-  user-generated content when using Tailwind CSS
+  user-generated HTML content when using Tailwind CSS with your favorite SSG!
 date: 2020-09-16T04:00:00.000Z
 featuredImage: /images/uploads/how-to-style-user-generated-content-with-tailwind.png
 ---
+
 Lately, I've been fiddling around with [Tailwind](https://tailwindcss.com/) css and [Eleventy](https://www.11ty.dev/) - (The site is built with them 😉 - love them 😍). I'm not going to talk about either of them in much detail, I'll have later posts for that! I did encounter a problem though and I had no idea how to solve it. So I wanted to quickly write about the problem and solution for others if they have the same issue.
 
 ## The Problem
