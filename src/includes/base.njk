@@ -20,20 +20,19 @@
   <title> The Delisle Domain </title>
 </head>
 
-<body class="flex flex-col min-h-screen px-8">
-  <header class="container mx-auto h-20 m-8 flex justify-between border-b-2 border-prime_text">
-    <div class="logo font-display text-primary ml-2">
-      <h1>
-        <a href="/">&lt; The Delisle <br />
-          Domain /&gt;</a>
+<body class="">
+  <header class="container mx-auto flex flex-col md:flex-row content-center md:justify-between h-24 mb-8 border-b-2 border-prime_text sticky top-0 bg-secondary">
+    <div class="mx-auto md:mx-0 lg:ml-4">
+      <h1 class="">
+        <a href="/" class="font-display text-4xl">&lt; The Delisle Domain /&gt;</a>
       </h1>
     </div>
-    <nav class="flex items-center">
-      <ul class="flex justify-end">
-        <li><a class="nav-item hover:text-primary active:text-secondary_text"href="/">Home</a></li>
-        <li><a class="is_{{ 'active' if '/blog' in page.url }} nav-item hover:text-primary active:text-secondary_text" href="/blog">Blog</a></li>
-        <li><a class="is_{{ 'active' if '/about' in page.url }} nav-item hover:text-primary active:text-secondary_text" href="/about">About</a></li>
-        <li><a class="is_{{ 'active' if '/contact' in page.url }} nav-item hover:text-primary active:text-secondary_text" href="/contact">Contact</a></li>
+    <nav class="hidden md:flex md:flex-row items-center">
+      <ul class="mx-auto flex justify-evenly text-2xl flex-grow">
+        <li><a class="p-3 font-display lg:px-5 xl:px-8"href="/">Home</a></li>
+        <li><a class="is_{{ 'active' if '/blog' in page.url }} p-3 font-display lg:px-5 xl:px-8" href="/blog">Blog</a></li>
+        <li><a class="is_{{ 'active' if '/about' in page.url }} p-3 font-display lg:px-5 xl:px-8" href="/about">About</a></li>
+        <li><a class="is_{{ 'active' if '/contact' in page.url }} p-3 font-display lg:px-5 xl:px-8" href="/contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -41,7 +40,7 @@
   {% block postContent %} {% block content %}{{ content | safe }}{% endblock%} {% endblock %}
 
   <div style="flex-grow:1"></div>
-  <footer class="mt-12 mb-1 text-center text-light text-tiny text-body">
+  <footer class="m-2 md:mt-12 md:mb-1 text-center text-light md:text-sm text-body">
     <p>&copy;The Delisle Domain</p>
     <p>Made with
       <a class="text-primary" href="https://www.netlify.com/">Netlify</a>,
@@ -50,6 +49,14 @@
       and ☕️
     </p>
   </footer>
+  <nav class="md:hidden sticky flex bottom-0 bg-secondary h-24 mt-8 border-t-2 border-primary">
+      <ul class="mx-auto flex justify-evenly text-2xl items-center flex-grow">
+        <li><a class="p-3"href="/">Home</a></li>
+        <li><a class="is_{{ 'active' if '/blog' in page.url }} p-3" href="/blog">Blog</a></li>
+        <li><a class="is_{{ 'active' if '/about' in page.url }} p-3" href="/about">About</a></li>
+        <li><a class="is_{{ 'active' if '/contact' in page.url }} p-3" href="/contact">Contact</a></li>
+      </ul>
+    </nav>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
     if (window.netlifyIdentity) {

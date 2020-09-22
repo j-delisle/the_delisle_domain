@@ -3,39 +3,40 @@ layout: 'base.njk'
 permalink: '/'
 ---
 
-<div class="container mx-auto flex justify-evenly">
-    <img src="/images/uploads/bio-grayscale.jpg" class="mr-4 w-auto h-64 rounded-full" alt="">
+<div class="container mx-auto md:flex md:justify-evenly w-4/5 md:mt-10">
+    <img src="/images/uploads/bio-grayscale.jpg" class="mx-auto my-auto w-2/5 h-auto rounded-full md:mr-10" alt="">
 
-    <div class="container mx-auto w-10/12 max-w-screen-md text-center flex flex-col justify-between ">
-        <h1 class="text-2xl font-display text-primary">Welcome to my Blog</h1>
-        <div class="container mx-auto h-20 mb-2 flex flex-col items-center justify-around content-center flex-wrap ">
-                <h4 class="odd word-banner">Python</h4>
-                <h4 class="even word-banner">JavaScript</h4>
-                <h4 class="odd word-banner">Django</h4>
-                <h4 class="odd word-banner">Freelance</h4>
-                <h4 class="even word-banner">Business</h4>
-                <h4 class="odd word-banner">Web Development</h4>
+    <div class="container mx-auto my-auto md:max-w-screen-md md:flex md:flex-col">
+        <h1 class="font-display text-4xl text-center p-2 my-3">Welcome to my Blog</h1>
+        <div class="hidden md:flex container mx-auto mb-4 w-3/5 flex-wrap items-center justify-center">
+            <h4 class="word-banner">Python</h4>
+            <h4 class="word-banner">JavaScript</h4>
+            <h4 class="word-banner">Django</h4>
+            <h4 class="word-banner">Freelance</h4>
+            <h4 class="word-banner">Business</h4>
+            <h4 class="word-banner">Web Development</h4>
         </div>
-        <p class="text-prime_text font-body p-1 max-w-screen-md mx-auto">
+        <p class="mx-auto text-justify px-6 max-w-md text-lg">
             Here I share all things tech, software development, and business - things that I am passionate about. Join me as I continue to share what I'm learning!
         </p>
     </div>
 </div>
 
 <div class="container mt-12 mx-auto">
-    <h3 class="font-display text-primary mx-auto text-2xl text-center m-10">Check out my latest posts</h3>
+    <h3 class="font-display text-primary mx-auto text-4xl text-center m-10">Check out my latest posts</h3>
     {% for post in collections.recentPosts.slice(0,3) %}
-    <div class="container-md mx-auto max-w-screen-lg p-4 flex justify-between border-2 border-light hover:bg-light">
-        <article class="font-body flex w-8/12">
-            <a href="{{ post.url }}" class="flex flex-col justify-evenly">
-                <h4 class="font-display text-xl text-primary">{{ post.data.title }}</h4>
-                <h6 class="text-sm text-secondary_text">{{ post.data.date.toDateString() }}</h6>
-                <h5 class="ext-base">{{ post.data.description }}</h5>
-            </a>
-        </article>
-        <a href="{{ post.url }}"class="h-auto w-2/5 ml-4">
+    <div class="container-md mx-auto max-w-screen-lg p-4 flex flex-col md:flex-row justify-between border-2 border-light hover:bg-light">
+        <a href="{{ post.url }}"class="block h-auto w-full md:w-2/5 md:ml-4">
             <img src="{{ post.data.featuredImage }}" alt="Blog Post Picture">
         </a>
+        <article class="font-body flex md:w-8/12 md:ml-10">
+            <a href="{{ post.url }}" class="flex flex-col justify-evenly">
+                <h4 class="px-1 py-2 font-display text-3xl text-primary">{{ post.data.title }}</h4>
+                <h6 class="px-1 py-2 text-lg text-secondary_text">{{ post.data.date.toDateString() }}</h6>
+                <h5 class="px-1 py-2 text-xl">{{ post.data.description }}</h5>
+            </a>
+        </article>
+        
     </div>
     {% endfor %}
 </div>

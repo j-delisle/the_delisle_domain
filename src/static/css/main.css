@@ -2,19 +2,23 @@
 
 :root {
   @apply bg-secondary text-prime_text font-body;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 h1 {
-  @apply text-2xl text-primary;
+  @apply text-6xl text-primary;
 }
 
 h2 {
-  @apply text-xl text-primary;
+  @apply text-4xl text-primary;
 }
 
 h3 {
-  @apply text-lg;
+  @apply text-2xl;
+}
+
+p {
+  @apply text-base;
 }
 
 h4 {
@@ -37,7 +41,7 @@ a {
 }
 
 .word-banner {
-  @apply font-body text-sm p-1 text-secondary_text;
+  @apply text-secondary_text p-4 text-xl flex-wrap;
 }
 
 .form-input {
