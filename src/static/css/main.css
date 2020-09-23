@@ -45,7 +45,7 @@ a {
 }
 
 .form-input {
-  @apply bg-light pl-3 m-4 w-1/2;
+  @apply bg-light pl-3 m-4;
   outline-color: #3aafa9;
 }
 
