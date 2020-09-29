@@ -1,5 +1,12 @@
 {% extends "base.njk" %}
 
+{% block postMeta %}
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:image" content="{{ featuredImage }}" />
+    <meta property="og:url" content="{{ url }}" />
+    <meta property="og:description" content="{{ description }}" />
+{% endblock %}
+
 {% block content %}
 <article class="container mx-auto max-w-screen-lg px-8">
     <div class="w-full pb-4 mb-2 mx-auto border-b-2 border-secondary_text">
