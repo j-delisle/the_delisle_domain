@@ -2,9 +2,11 @@
 
 {% block postMeta %}
     <meta property="og:title" content="{{ title }}" />
-    <meta property="og:image" content="{{ featuredImage }}" />
-    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="twitter:image" content="{{ settings.siteURL }}{{ featuredImage }}" />
+    <meta property="og:image" content="{{ settings.siteURL }}{{ featuredImage }}" />
+    <meta property="og:url" content="{{ settings.siteURL }}{{ page.url | url }}" />
     <meta property="og:description" content="{{ description }}" />
+
 {% endblock %}
 
 {% block content %}
