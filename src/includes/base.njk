@@ -1,30 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/static/css/main.css" />
-  {% block postMeta %}
-  {# Social Media Meta #}
-  
-  {% endblock %}
-
-
-  <link href="https://fonts.googleapis.com/css?family=Righteous|Staatliches&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
-
-  {# Tab Icon #}
-  <!-- for FF, Chrome, Opera -->
-  <link rel="icon" type="image/png" href="/images/uploads/internet_102151.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="/images/uploads/internet_102151.png" sizes="32x32">
-
-  <!-- for IE -->
-  <link rel="icon" type="image/x-icon" href="/images/uploads/internet_102151.ico" >
-  <link rel="shortcut icon" type="image/x-icon" href="/images/uploads/internet_102151.ico"/>
-
-  <title> The Delisle Domain </title>
-</head>
+{% include "_head.html" %}
 
 <body class="flex flex-col min-h-screen">
   <header class="container mx-auto flex flex-col md:flex-row content-center md:justify-between h-24 mb-8 border-b-2 border-prime_text sticky md:static top-0 bg-secondary">
@@ -46,16 +23,10 @@
   {% block postContent %} {% block content %}{{ content | safe }}{% endblock%} {% endblock %}
 
   <div style="flex-grow:1"></div>
-  <footer class="mb-2 mt-8 md:mt-12 md:mb-1 text-center text-light md:text-sm text-body">
-    <p>&copy;The Delisle Domain</p>
-    <p>Made with
-      <a class="text-primary" href="https://www.netlify.com/">Netlify</a>,
-      <a class="text-primary" href="https://tailwindcss.com/">Tailwindcss</a>,
-      <a class="text-primary" href="https://www.11ty.dev/">11ty</a>,
-      and ☕️
-    </p>
-  </footer>
   
+  {% include "_footer.html" %}
+  
+  {# mobile bottom nav #}
   <nav class="md:hidden sticky flex bottom-0 bg-secondary h-24 mt-1 border-t-2 border-primary">
       <ul class="mx-auto flex justify-evenly text-2xl items-center flex-grow">
         <li><a class="p-3"href="/">Home</a></li>
@@ -64,18 +35,7 @@
         <li><a class="is_{{ 'active' if '/contact' in page.url }} p-3" href="/contact">Contact</a></li>
       </ul>
     </nav>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", (user) => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
+  {% include "_scripts.html" %}
 </body>
 
 </html>
