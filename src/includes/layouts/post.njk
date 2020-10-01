@@ -10,6 +10,9 @@
 {% endblock %}
 
 {% block content %}
+
+
+
 <article class="container mx-auto max-w-screen-lg px-8">
     <div class="w-full pb-4 mb-2 mx-auto border-b-2 border-secondary_text">
         <div class="w-full md:w-4/5 mx-auto pb-4">
@@ -17,6 +20,9 @@
         </div>
         <h2 class="font-display text-primary text-3xl lg:text-4xl">{{ title }}</h2>
         <h3 class="text-base text-secondary_text">{{ page.date.toDateString() }}</h3>
+        <div class="mt-4">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
     </div>
     <div class="container-lg mt-3 markdown">
         {{ content | safe }}
