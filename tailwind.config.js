@@ -16,7 +16,11 @@ module.exports = {
         light: "#646464",
       },
       fontSize: {
-        'tiny': '0.6rem'
+        tiny: "0.6rem",
+      },
+      boxShadow: {
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.7)",
+        hover: "0 25px 50px -12px rgba(100, 100, 100, 0.3)",
       },
     },
   },

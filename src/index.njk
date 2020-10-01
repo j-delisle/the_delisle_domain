@@ -11,7 +11,7 @@ permalink: '/'
         <div class="hidden md:flex container mx-auto mb-4 w-3/5 flex-wrap items-center justify-center">
             <h4 class="word-banner">Python</h4>
             <h4 class="word-banner">JavaScript</h4>
-            <h4 class="word-banner">Django</h4>
+            <h4 class="word-banner">Static Site Generators</h4>
             <h4 class="word-banner">Freelance</h4>
             <h4 class="word-banner">Business</h4>
             <h4 class="word-banner">Web Development</h4>
@@ -24,19 +24,21 @@ permalink: '/'
 
 <div class="container mt-12 mx-auto">
     <h3 class="font-display text-primary mx-auto text-4xl text-center m-10">Check out my latest posts</h3>
-    {% for post in collections.recentPosts.slice(0,3) %}
-    <div class="container-md mx-auto max-w-screen-lg p-4 flex flex-col md:flex-row justify-between border-2 border-light hover:bg-light">
-        <a href="{{ post.url }}"class="block h-auto w-full md:w-2/5 md:ml-4">
-            <img src="{{ post.data.featuredImage }}" alt="Blog Post Picture">
-        </a>
-        <article class="font-body flex md:w-8/12 md:ml-10">
-            <a href="{{ post.url }}" class="flex flex-col justify-evenly">
-                <h4 class="px-1 py-2 font-display text-3xl text-primary">{{ post.data.title }}</h4>
-                <h6 class="px-1 py-2 text-lg text-secondary_text">{{ post.data.date.toDateString() }}</h6>
-                <h5 class="px-1 py-2 text-xl">{{ post.data.description }}</h5>
+    <div class="space-y-8">
+        {% for post in collections.recentPosts.slice(0,3) %}
+        <div class="container-md mx-10 max-w-screen-lg p-4 flex flex-col md:mx-auto md:flex-row justify-between border-2 border-light rounded-lg hover:bg-light shadow-3xl hover:shadow-hover">
+            <a href="{{ post.url }}"class="block h-auto w-full md:w-2/5 md:ml-4">
+                <img src="{{ post.data.featuredImage }}" alt="Blog Post Picture">
             </a>
-        </article>
-        
+            <article class="font-body flex md:w-8/12 md:ml-10">
+                <a href="{{ post.url }}" class="flex flex-col justify-evenly">
+                    <h4 class="px-1 py-2 font-display text-3xl text-primary">{{ post.data.title }}</h4>
+                    <h6 class="px-1 py-2 text-lg text-secondary_text">{{ post.data.date.toDateString() }}</h6>
+                    <h5 class="px-1 py-2 text-xl">{{ post.data.description }}</h5>
+                </a>
+            </article>
+            
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
