@@ -1,10 +1,11 @@
 
 {% extends "base.njk" %}
 {% block postContent %}
-<div class="posts-container">
-  <ol>
+<div>
+  <ol class="space-y-8 mx-auto">
     {% for post in collections.blogs | reverse %}
-    <li class="container mx-auto flex md:flex-row flex-col justify-between p-4 border-secondary_text border-b-2 hover:bg-light">
+    <div class="m-10">
+    <li class="container mx-auto flex md:flex-row flex-col justify-between p-4 border-light border-2 rounded-lg shadow-3xl hover:bg-light">
       <strong>
         <a href="{{ post.url }}">
           <h1 class="text-primary font-display text-xl md:text-2xl lg:text-3xl md:max-w-3xl" xl:max-w-none>{{ post.data.title }}</h1>
@@ -18,6 +19,7 @@
           <time class="font-body text-sm md:text-base lg:text-lg" datetime="{{ post.date.toString() }}">{{ post.date.toDateString() }}</time>
       </div>
     </li>
+    </div>
     {% endfor %}
   </ol>
 </div>
