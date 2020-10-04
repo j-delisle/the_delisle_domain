@@ -5,10 +5,17 @@
 
 <body class="flex flex-col min-h-screen">
   <header class="container mx-auto flex flex-col md:flex-row content-center md:justify-between h-24 mb-8 border-b-2 border-prime_text sticky md:static top-0 bg-secondary">
-    <div class="mx-auto my-auto flex items-center md:mx-0 lg:ml-4">
+    <div class="mx-auto my-auto md:mx-0 lg:ml-4">
       <h1 class="flex items-center">
         <a href="/" class="font-display text-4xl">&lt; The Delisle Domain /&gt;</a>
       </h1>
+      <div class="flex justify-center space-x-10 md:space-x-4">
+        <a class="transform hover:text-primary hover:scale-125 duration-300" href="{{ settings.twitter }}" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        <a class="transform hover:text-primary hover:scale-125 duration-300" href="{{ settings.youtube }}" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+        <a class="transform hover:text-primary hover:scale-125 duration-300" href="{{ settings.github }}" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+        <a class="transform hover:text-primary hover:scale-125 duration-300" href="{{ settings.linked_in }}" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+        <a class="transform hover:text-primary hover:scale-125 duration-300" href="{{ settings.instagram }}" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+      </div>
     </div>
     <nav class="hidden md:flex md:flex-row items-center">
       <ul class="mx-auto flex justify-evenly text-2xl flex-grow">
