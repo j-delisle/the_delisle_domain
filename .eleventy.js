@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
   return {
     addPassthroughCopy: true,
     templateFormats: ["njk", "html", "md"],
-    markdownTemplateEngine: "njk",
+    markdownTemplateEngine: false,
     dir: {
       input: "src",
       output: "_site",
