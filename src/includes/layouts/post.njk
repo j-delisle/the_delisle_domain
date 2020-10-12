@@ -1,18 +1,17 @@
 {% extends "base.njk" %}
 
 {% block postMeta %}
-    <meta property="og:title" content="{{ title }}" />
     <meta property="twitter:image" content="{{ settings.siteURL }}{{ featuredImage }}" />
+    <meta name="twitter:creator" content="@delisle_domain" />
+    <meta name="twitter:card" content="{{ description }}" />
+    
+    <meta property="og:title" content="{{ title }}" />
     <meta property="og:image" content="{{ settings.siteURL }}{{ featuredImage }}" />
     <meta property="og:url" content="{{ settings.siteURL }}{{ page.url | url }}" />
     <meta property="og:description" content="{{ description }}" />
-
 {% endblock %}
 
 {% block content %}
-
-
-
 <article class="container mx-auto max-w-screen-lg px-8">
     <div class="w-full pb-4 mb-2 mx-auto border-b-2 border-secondary_text">
         <div class="w-full md:w-4/5 mx-auto pb-4">
