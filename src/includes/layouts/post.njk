@@ -1,9 +1,9 @@
 {% extends "base.njk" %}
 
 {% block postMeta %}
+    <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:image" content="{{ settings.siteURL }}{{ featuredImage }}" />
     <meta name="twitter:creator" content="@delisle_domain" />
-    <meta name="twitter:card" content="{{ description }}" />
     
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:image" content="{{ settings.siteURL }}{{ featuredImage }}" />
