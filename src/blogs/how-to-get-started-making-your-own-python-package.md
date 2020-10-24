@@ -9,15 +9,15 @@ featuredImage: /images/uploads/python_original_wordmark_logo_icon_146382.png
 
 Over the past few days - I've been looking into getting more involved in opensource - so I've been on Github just exploring different repositories and technologies. This got me thinking - how cool would it be to have a tool or program that could help other developers up on GitHub? Most of my stuff now is just websites - not full applications. But how do I start? How can I make my software available to others to use? After googling, I quickly realized I needed to make my own package! So here we will learn the basics of how to make your own Python package!
 
-# What is a Package
+## What is a Package
 
 A python package is just a bunch of files that do something. Similar to a python module - which ends up just being a `file.py` (module) that can be imported for use.
 
-# Minimum Requirements
+## Minimum Requirements
 
 As I said above, this will go over everything needed at the most minimal level to create your own python package. So let's say you have this awesome idea for a package and you call it `my_package` - so original I know 🤣.
 
-## File Structure
+### File Structure
 
 The below shows the minimum files and directory structure needed.
 
@@ -38,7 +38,7 @@ The root directory is the name of our package - my_package. Then inside this, we
 - a README written in markdown. This is where you explain all about your package like what it does, how to use it, how to download etc.
 - Last is the setup.py file which is used as the build script by [setuptools](https://packaging.python.org/key_projects/#setuptools). This file contains things like the name of the package, the version, description, author, and more.
 
-## Generating Release Requirements
+### Generating Release Requirements
 
 After you have the needed files, we need to create the needed tools/files for a release, otherwise known as generating the [distribution packages](https://packaging.python.org/glossary/#term-Distribution-Package) for the package. These tools can quickly and easily be installed with `pip` on the command line as follows:
 
@@ -74,7 +74,7 @@ python3 -m twine upload dist/*
 
 And just like that you now know what is the minimum needed requirements to upload a package to PyPi and be able to install that package with `pip`.
 
-# Few Notes
+## Few Notes
 
 If you have questions on any topic here - take a look at this [tutorial](https://packaging.python.org/tutorials/packaging-projects/) as it is what I followed to do so.
 
