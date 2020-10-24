@@ -46,10 +46,10 @@
     </div>
     <nav class="hidden md:flex md:flex-row items-center">
       <ul class="mx-auto flex justify-evenly text-2xl flex-grow">
-        <li><a class="p-3 font-display lg:px-5 xl:px-8"href="/">Home</a></li>
-        <li><a class="is_{{ 'active' if '/blog' in page.url }} p-3 font-display lg:px-5 xl:px-8" href="/blog">Blog</a></li>
-        <li><a class="is_{{ 'active' if '/about' in page.url }} p-3 font-display lg:px-5 xl:px-8" href="/about">About</a></li>
-        <li><a class="is_{{ 'active' if '/contact' in page.url }} p-3 font-display lg:px-5 xl:px-8" href="/contact">Contact</a></li>
+        <li><a class="hover:text-primary p-3 font-display lg:px-5 xl:px-8"href="/">Home</a></li>
+        <li><a class="hover:text-primary is_{{ 'active' if '/blog' in page.url }} p-3 font-display lg:px-5 xl:px-8" href="/blog">Blog</a></li>
+        <li><a class="hover:text-primary is_{{ 'active' if '/about' in page.url }} p-3 font-display lg:px-5 xl:px-8" href="/about">About</a></li>
+        <li><a class="hover:text-primary is_{{ 'active' if '/contact' in page.url }} p-3 font-display lg:px-5 xl:px-8" href="/contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -64,9 +64,9 @@
   <nav class="md:hidden sticky flex bottom-0 bg-secondary h-24 mt-1 border-t-2 border-primary">
       <ul class="mx-auto flex justify-evenly text-2xl items-center flex-grow">
         <li><a class="p-3"href="/">Home</a></li>
-        <li><a class="is_{{ 'active' if '/blog' in page.url }} p-3" href="/blog">Blog</a></li>
-        <li><a class="is_{{ 'active' if '/about' in page.url }} p-3" href="/about">About</a></li>
-        <li><a class="is_{{ 'active' if '/contact' in page.url }} p-3" href="/contact">Contact</a></li>
+        <li><a class="hover:text-primary is_{{ 'active' if '/blog' in page.url }} p-3" href="/blog">Blog</a></li>
+        <li><a class="hover:text-primary is_{{ 'active' if '/about' in page.url }} p-3" href="/about">About</a></li>
+        <li><a class="hover:text-primary is_{{ 'active' if '/contact' in page.url }} p-3" href="/contact">Contact</a></li>
       </ul>
     </nav>
   {% include "_scripts.njk" %}
