@@ -9,7 +9,11 @@
     <meta property="og:image" content="{{ settings.siteURL }}{{ featuredImage }}" />
     <meta property="og:url" content="{{ settings.siteURL }}{{ page.url | url }}" />
     <meta property="og:description" content="{{ description }}" />
+
+    <meta name="Description" content="{{ description }}">
 {% endblock %}
+
+{% block titleMeta %} {{ title }} | {{ settings.siteName }}{% endblock %}
 
 {% block content %}
 <article class="container mx-auto max-w-screen-lg px-8">
