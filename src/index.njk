@@ -1,7 +1,7 @@
----
-layout: 'base.njk'
-permalink: '/'
----
+{% extends "base.njk" %}
+
+{% block titleMeta %} {{settings.siteName}} {% endblock %}
+{% block content %}
 <div class="container mx-auto md:flex md:justify-evenly w-4/5 md:mt-10">
     <img src="/images/uploads/bio-grayscale.jpg" class="mx-auto my-auto w-2/5 h-auto rounded-full md:mr-10" alt="">
 
@@ -41,3 +41,4 @@ permalink: '/'
         {% endfor %}
     </div>
 </div>
+{% endblock %}
