@@ -36,12 +36,11 @@ Through this year I learned new technologies and improved upon my skills as a de
 - Static Site Generators - as mentioned above I love SSG's and feel they are a great tool for web development today. This year I used mainly two when developing and practicing my web development skills
   - [Eleventy](https://www.11ty.dev/) - which this blog is built with
   - [Hugo](https://gohugo.io/) - I find it easy to work with and fits my development process well
-- Tailwind - I used tailwind css to build this site and to be honest, feel I will use it on every project going forward. It is just a pleasure to use for me. I like keeping my HTML and styling together - less file switching and better efficiency.
-
-Yes, 2020 was a year that will be remembered, for obvious reasons, but there was still a lot of good to come out of it!
-
+- Tailwind - I used tailwind css to build this site and to be honest, feel I will use it on every project going forward. It is just a pleasure to use for me. I like keeping my HTML and styling together - less file switching and better efficiency.<br>
+<br>
+Yes, 2020 was a year that will be remembered, for obvious reasons, but there was still a lot of good to come out of it!<br>
+<br>
 I look forward to the new year as I continue to grow as an engineer, write more blog posts, and help others.
-
-Stay tuned for my next post on my goals and learning path for this year!
-
+Stay tuned for my next post on my goals and learning path for this year!<br>
+<br>
 What was your biggest achievement of 2020? [Follow me on Twitter](https://twitter.com/delisle_domain) and let me know!
