@@ -4,6 +4,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:image" content="{{ settings.siteURL }}/images/uploads/og-homepage.jpg" />
     <meta name="twitter:creator" content="@delisle_domain" />
+
+    <meta name="Description" content="Delisle Domain is a personal tech blog in which I share my journey and experience with software development technologies like python, django, javascript, and vue along with business and freelance tips, tricks, and findings">
     
     <meta property="og:title" content="{{ settings.siteName }}" />
     <meta property="og:image" content="{{ settings.siteURL }}/images/uploads/og-homepage.jpg" />
@@ -12,12 +14,12 @@
 
 {% block titleMeta %} {{settings.siteName}} {% endblock %}
 {% block content %}
-<div class="container mx-auto md:flex md:justify-evenly w-4/5 md:mt-10">
-    <img src="/images/uploads/bio-grayscale.jpg" class="mx-auto my-auto w-2/5 h-auto rounded-full md:mr-10" alt="">
+<div class="container w-4/5 mx-auto md:flex md:justify-evenly md:mt-10">
+    <img src="/images/uploads/bio-grayscale.jpg" class="w-2/5 h-auto mx-auto my-auto rounded-full md:mr-10" alt="">
 
     <div class="container mx-auto my-auto md:max-w-screen-md md:flex md:flex-col">
-        <h1 class="font-display text-4xl text-center p-2 my-3">Welcome to my Blog</h1>
-        <div class="hidden md:flex container mx-auto mb-4 w-3/5 flex-wrap items-center justify-center">
+        <h1 class="p-2 my-3 text-4xl text-center font-display">Welcome to my Blog</h1>
+        <div class="container flex-wrap items-center justify-center hidden w-3/5 mx-auto mb-4 md:flex">
             <h4 class="word-banner">Python</h4>
             <h4 class="word-banner">JavaScript</h4>
             <h4 class="word-banner">Static Site Generators</h4>
@@ -25,23 +27,23 @@
             <h4 class="word-banner">Business</h4>
             <h4 class="word-banner">Web Development</h4>
         </div>
-        <p class="mx-auto text-justify px-6 max-w-md text-lg">
+        <p class="max-w-md px-6 mx-auto text-lg text-justify">
             Here I share all things tech, software development, and business - things that I am passionate about. Join me as I continue to share what I'm learning!
         </p>
     </div>
 </div>
 
-<div class="container mt-12 mx-auto">
-    <h3 class="font-display text-primary mx-auto text-4xl text-center m-10">Check out my latest posts</h3>
+<div class="container mx-auto mt-12">
+    <h3 class="m-10 mx-auto text-4xl text-center font-display text-primary">Check out my latest posts</h3>
     <div class="space-y-8">
         {% for post in collections.recentPosts.slice(0,3) %}
-        <div class="container-md mx-10 max-w-screen-lg p-4 flex flex-col md:mx-auto md:flex-row justify-between border-2 border-light rounded-lg hover:bg-light shadow-3xl hover:shadow-hover">
-            <a href="{{ post.url }}"class="block h-auto w-full md:w-2/5 md:ml-4">
+        <div class="flex flex-col justify-between max-w-screen-lg p-4 mx-10 border-2 rounded-lg container-md md:mx-auto md:flex-row border-light hover:bg-light shadow-3xl hover:shadow-hover">
+            <a href="{{ post.url }}"class="block w-full h-auto md:w-2/5 md:ml-4">
                 <img src="{{ post.data.featuredImage }}" alt="Blog Post Picture">
             </a>
-            <article class="font-body flex md:w-8/12 md:ml-10">
+            <article class="flex font-body md:w-8/12 md:ml-10">
                 <a href="{{ post.url }}" class="flex flex-col justify-evenly">
-                    <h4 class="px-1 py-2 font-display text-3xl text-primary">{{ post.data.title }}</h4>
+                    <h4 class="px-1 py-2 text-3xl font-display text-primary">{{ post.data.title }}</h4>
                     <h6 class="px-1 py-2 text-lg text-secondary_text">{{ post.data.date.toDateString() }}</h6>
                     <h5 class="px-1 py-2 text-xl">{{ post.data.description }}</h5>
                 </a>
