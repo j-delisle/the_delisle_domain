@@ -50,13 +50,17 @@ This year is a big year for me in terms of improving my skills for furthering my
 - Generators
 - Concurrency
 <br>
-
+<br>
 The above topics are things that I have heard of but do not know. I want to understand these concepts fully - when to use them, their performance capabilities, specific design patterns, etc. One of the reasons I want to grasp the concept of concurrency is to help in my journey to master Go. There are a few other python topics that I want to comprehend more fully, though I've used them or have an extremely basic understanding of. Those topics would be:<br>
+<br>
+<br>
+
 - Decorators
 - Comprehensions (List, Dict, and Set)
 - Custom Context Managers
-<br>
 
+<br>
+<br>
 My main goal here is to fill in any gaps of knowledge on these topics as well as know the pythonic design patterns used in python software development for the above topics.<br>
 <br>
 Lastly, is a little bonus. Currently, my company is in the process of migrating from Python2 to Python3 and I want to fully study and comprehend the difference in how encodings are handled differently between python2 and python3. <br>
@@ -70,7 +74,7 @@ Finally, I have two goals that deal with this blog site and [Delisle Domain](htt
 1. Write and publish 40 blog posts on [Delisle Domain](https://www.thedelisledomain.com/blog/)
 2. Start the [Delisle Domain](https://www.youtube.com/channel/UCxcQS5FdmG_NtVL120D47tA) YouTube and post a video per month
 <br>
-
+<br>
 Though I have a lot more goals and objectives for all these areas, I feel it is better to have fewer goals for me. I'm the type of person who is always adding things to a list, and then that list of new ideas, tech, or goals grows to an unsustainable and unrealistic list and then nothing gets completed as I'm jumping around from objective to objective. It is better for me to a few goals to stay consistent with through the year.<br>
 <br>
 That said I'm super excited for this new year and can't wait to see what comes of it!<br>
