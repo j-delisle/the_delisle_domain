@@ -16,7 +16,7 @@ This year I plan to learn 2 major technologies and get familiar with a new langu
 
 ### Django
 <br>
-I've already started to use and know the extreme basics of [Django](https://www.djangoproject.com/). However, I want to fully learn it this year. There are a few reasons for this.
+I've already started to use and know the extreme basics of [Django](https://www.djangoproject.com). However, I want to fully learn it this year. There are a few reasons for this.
 1. It will help my python skills.
 2. It is a well known backend framework and stable.
 3. It is in a lot of job requirements and company tech stacks that interest me.
@@ -27,16 +27,16 @@ I love python and feel confident in the basics of the language and look forward 
 
 ### VueJS --> Nuxt
 <br>
-I have yet to learn a frontend framework. As I continue to learn and grow my web development skills I am now seeing the true power and use cases for frontend frameworks. I decided to go with [Vue.js](https://vuejs.org/) for a few reasons. First, and technically not a real reason but I was more drawn to it over React. I think part of that, which is a genuine reason, was because of its community and the fact that it is not corporately owned/funded. Second, I love that it is a PROGRESSIVE frontend framework. This was a big deal to me. I don't want to have to commit to fully use the framework everywhere. I want to use it where it is needed and Vue allows that. Thirdly, and probably the main reason was I like its syntax and approach over React. The overall function and templating of Vue just seems like a more enjoyable workflow for me and my work.<br>
+I have yet to learn a frontend framework. As I continue to learn and grow my web development skills I am now seeing the true power and use cases for frontend frameworks. I decided to go with [Vue.js](https://vuejs.org) for a few reasons. First, and technically not a real reason but I was more drawn to it over React. I think part of that, which is a genuine reason, was because of its community and the fact that it is not corporately owned/funded. Second, I love that it is a PROGRESSIVE frontend framework. This was a big deal to me. I don't want to have to commit to fully use the framework everywhere. I want to use it where it is needed and Vue allows that. Thirdly, and probably the main reason was I like its syntax and approach over React. The overall function and templating of Vue just seems like a more enjoyable workflow for me and my work.<br>
 <br>
 I'm not learning a frontend framework because I want a job as a frontend engineer. I'm learning Vue because I see where it solves problems that I come across. I'm more interested in backend development than the front! It was nice not having a job/career motive in picking the frontend framework I wanted to learn. I feel most people say just learn React it has the most jobs etc. But to be honest, Frontend frameworks are interchangeable in my mind beyond learning the syntax and approaches of each. In general, they are there to accomplish the same goals and objectives.<br>
 <br>
-Now I said VueJS leading to [Nuxt](https://nuxtjs.org/) because of 2 main reasons. First, I think Nuxt does a great job at solving some of the problems that exist with Vue in general. And secondly, Nuxt is a frontend framework for Vue as well as a static site generator! If you've read any of my posts you know that SSG's are a big part of my workflow and tech stack that I like to use. All this said I want to make sure fully understand the core concepts of Vue before progressing into Nuxt! Either way, I'm super excited to start my journey into frontend frameworks. <br>
+Now I said VueJS leading to [Nuxt](https://nuxtjs.org) because of 2 main reasons. First, I think Nuxt does a great job at solving some of the problems that exist with Vue in general. And secondly, Nuxt is a frontend framework for Vue as well as a static site generator! If you've read any of my posts you know that SSG's are a big part of my workflow and tech stack that I like to use. All this said I want to make sure fully understand the core concepts of Vue before progressing into Nuxt! Either way, I'm super excited to start my journey into frontend frameworks. <br>
 <br>
 
 ### New Programming Language: GO
 <br>
-As seen in some of my other posts I've already started to look at [Go](https://golang.org/). But this year I want to get rather more familiar with Go as a programming language. I feel this is a great language for me to learn, again because I'm more drawn to the backend than the front. I see it a lot in job requirements and it is being adopted into many company tech stacks regularly it seems. This year I want to get used to all the syntax differences coming from python.<br>
+As seen in some of my other posts I've already started to look at [Go](https://golang.org). But this year I want to get rather more familiar with Go as a programming language. I feel this is a great language for me to learn, again because I'm more drawn to the backend than the front. I see it a lot in job requirements and it is being adopted into many company tech stacks regularly it seems. This year I want to get used to all the syntax differences coming from python.<br>
 <br>
 
 ## 2. Skills to Improve
@@ -68,10 +68,10 @@ Lastly, is a little bonus. Currently, my company is in the process of migrating 
 
 ## 3. Delisle Domain Goals
 <br>
-Finally, I have two goals that deal with this blog site and [Delisle Domain](https://www.thedelisledomain.com/) as a whole. This is a short goal list - but will require a good amount of work! This year I want to...<br>
+Finally, I have two goals that deal with this blog site and [Delisle Domain](https://www.thedelisledomain.com) as a whole. This is a short goal list - but will require a good amount of work! This year I want to...<br>
 <br>
 
-1. Write and publish 40 blog posts on [Delisle Domain](https://www.thedelisledomain.com/blog/)
+1. Write and publish 40 blog posts on [Delisle Domain](https://www.thedelisledomain.com/blog)
 2. Start the [Delisle Domain](https://www.youtube.com/channel/UCxcQS5FdmG_NtVL120D47tA) YouTube and post a video per month
 <br>
 <br>
