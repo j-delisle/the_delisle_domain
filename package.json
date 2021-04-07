@@ -5,40 +5,28 @@
   "main": ".eleventy.js",
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "autoprefixer": "^9.8.6",
     "dotenv": "^8.2.0",
     "netlify-cms": "^2.10.48",
     "node-fetch": "^2.6.1",
+    "postcss": "^7.0.35",
     "postcss-clean": "^1.1.0",
     "postcss-import": "^12.0.1",
-    "tailwindcss": "^1.6.2"
+    "tailwindcss": "^2.0.1-compat"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "autoprefixer": "^9.8.6",
     "npm-run-all": "^4.1.5",
-    "postcss": "^7.0.32",
     "postcss-cli": "^7.1.1",
     "postcss-css-variables": "^0.17.0",
     "postcss-partial-import": "^4.1.0",
-    "postcss-preset-env": "^6.7.0"
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^3.0.2"
   },
   "scripts": {
-    "build_11ty": "eleventy",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "debug": "DEBUG=* eleventy",
-    "clean": "rm -rf _site",
-    "dev": "npm-run-all clean --parallel dev:*",
-    "dev:postcss": "postcss src/static/css/main.css -d _site/static/css --config ./postcss.config.js -w",
-    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet",
-    "dev:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
-    "testProd:postcss": "postcss src/static/css/main.css -d _site/static/css --config ./postcss.config.js -w",
-    "testProd:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet",
-    "testProd:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
-    "testbuild": "NODE_ENV=production npm-run-all clean --parallel testProd:*",
-    "prod:postcss": "postcss src/static/css/main.css -d _site/static/css --config ./postcss.config.js",
-    "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site",
-    "build": "NODE_ENV=production npm-run-all clean --parallel prod:*"
+    "clean": "rimraf public src/static/css/styles.css",
+    "dev": "npm run clean && postcss src/static/css/main.css > src/static/css/styles.css && eleventy --serve",
+    "build": "npm run clean && NODE_ENV=production postcss src/static/css/main.css > src/static/css/styles.css && eleventy"
   },
   "keywords": [],
   "author": "Jay Delisle",

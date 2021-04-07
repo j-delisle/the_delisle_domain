@@ -3,27 +3,27 @@
 {% block titleMeta %}Contact Me - {{ settings.siteName }}{% endblock %}
 
 {% block postContent %}
-<div class="container mx-auto text-center max-w-screen-md px-8">
+<div class="container max-w-screen-md px-8 mx-auto text-center">
     <h1 class="text-4xl font-display text-primary">Questions?</h1>
     <p class="text-base">If you have any questions at all, or if there is something you want me to check out, then let me know by sending me a quick email. <br>
     I'm always up for learning something new and/or helping others!</p>
     <div class="w-full">
-        <a class="flex justify-center items-center w-full md:w-40 md:mx-auto h-10 bg-secondary text-primary border-2 border-primary text-xl rounded-lg py-6 mt-8 hover:bg-primary hover:text-secondary duration-300" href="mailto:jay@thedelisledomain.com">Email Me!</a>
+        <a class="flex items-center justify-center w-full h-10 py-6 mt-8 text-xl duration-300 border-2 rounded-lg md:w-40 md:mx-auto bg-secondary text-primary border-primary hover:bg-primary hover:text-secondary" href="mailto:jay@thedelisledomain.com">Email Me!</a>
     </div>
 </div>
-<div class="container mx-auto text-center max-w-screen-md pt-8 px-8">
+<div class="container max-w-screen-md px-8 pt-8 mx-auto text-center">
     <h1 class="text-4xl font-display text-primary">Join My Newsletter Below!</h1>
-    <h4 class="text-lg">You'll receive emails when a new blog is posted as well as other new content that I'm learning - don't be surprised if you get some clean photos of motorcycles and cars either &#128526</h4>
+    <h4 class="text-lg">You'll receive emails when a new blog is posted as well as other new content that I'm learning - don't be surprised if you get some clean photos of motorcycles and cars either &#128526;</h4>
     <form name="DelisleDomainNewsletter" action="POST" netlify class="flex flex-col p-4 text-center">
-        <label class="text-lg block" for="name">Name: <input type="text" name="name" id="name" placeholder="Name" required="required"
-                class="form-input focus:border-primary h-8 w-full sm:w-4/5"></label>
-        <label class="text-lg block" for="email">Email: <input type="email" name="email" id="email" placeholder="Email" required="required"
-                class="form-input focus:border-primary h-8 w-full sm:w-4/5"></label>
+        <label class="block text-lg" for="name">Name: <input type="text" name="name" id="name" placeholder="Name" required="required"
+                class="w-full h-8 form-input focus:border-primary sm:w-4/5"></label>
+        <label class="block text-lg" for="email">Email: <input type="email" name="email" id="email" placeholder="Email" required="required"
+                class="w-full h-8 form-input focus:border-primary sm:w-4/5"></label>
         <div hidden aria-hidden="true">
             <label for="">Don't fill this out if human <input type="hidden" name="bot-text"></label>
         </div>
         <button type='submit'
-            class="flex justify-center items-center w-full md:w-40 md:mx-auto h-10 bg-secondary text-primary border-2 border-primary text-xl rounded-lg py-6 mt-8 hover:bg-primary hover:text-secondary duration-300">Subscribe</button>
+            class="flex items-center justify-center w-full h-10 py-6 mt-8 text-xl duration-300 border-2 rounded-lg md:w-40 md:mx-auto bg-secondary text-primary border-primary hover:bg-primary hover:text-secondary">Subscribe</button>
     </form>
 </div>
 {% endblock %}

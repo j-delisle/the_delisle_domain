@@ -21,7 +21,7 @@ As I said above, this will go over everything needed at the most minimal level t
 
 The below shows the minimum files and directory structure needed.
 
-```
+```console
 📦my_package
  ┣ 📂my_package
  ┃ ┗ 📜__init__.py
@@ -54,7 +54,7 @@ python3 setup.py sdist bdist_wheel
 
 **VOILA** and just like, that you've generated what is needed for distributing the package.
 
-## Upload Your Awesome Package!
+## Upload Your Awesome Package
 
 Now it is time to upload your package to the [Python Package Index](https://pypi.org/)
 
