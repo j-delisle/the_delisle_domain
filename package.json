@@ -9,7 +9,7 @@
     "dotenv": "^8.2.0",
     "netlify-cms": "^2.10.48",
     "node-fetch": "^2.6.1",
-    "postcss": "^7.0.35",
+    "postcss": "^8.2.10",
     "postcss-clean": "^1.1.0",
     "postcss-import": "^12.0.1",
     "tailwindcss": "^2.0.1-compat"
