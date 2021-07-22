@@ -9,7 +9,7 @@ module.exports = {
         body: ["Lato"],
       },
       colors: {
-        primary: "#3aafa9",
+        primary: "#04c48e",
         secondary: "#1f2226",
         prime_text: "#feffff",
         secondary_text: "#bacfc1",
