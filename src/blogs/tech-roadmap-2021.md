@@ -59,7 +59,7 @@ Lastly, is a little bonus. Currently, my company is in the process of migrating 
 
 Finally, I have two goals that deal with this blog site and [Delisle Domain](https://www.thedelisledomain.com) as a whole. This is a short goal list - but will require a good amount of work! This year I want to...
 
-1. Write and publish 40 blog posts on [Delisle Domain](https://www.thedelisledomain.com/blog)
+1. Write and publish 40 blog posts on my [Personal Blog](https://www.jaydel.tech/blog)
 2. Start the [Delisle Domain](https://www.youtube.com/channel/UCxcQS5FdmG_NtVL120D47tA) YouTube and post a video per month
 
 Though I have a lot more goals and objectives for all these areas, I feel it is better to have fewer goals for me. I'm the type of person who is always adding things to a list, and then that list of new ideas, tech, or goals grows to an unsustainable and unrealistic list and then nothing gets completed as I'm jumping around from objective to objective. It is better for me to a few goals to stay consistent with through the year.
