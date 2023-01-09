@@ -4,7 +4,7 @@
   "description": "My Personal blog website",
   "main": ".eleventy.js",
   "dependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^1.0.2",
     "autoprefixer": "^9.8.6",
     "dotenv": "^8.2.0",
     "netlify-cms": "^2.10.48",
